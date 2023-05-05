@@ -32,8 +32,8 @@ class Player(GameSprite):
        if keys[K_s] and self.rect.y < win_height - 100:
            self.rect.y += self.speed
 
-rocket1 = Player('player1.png', 0, 420, 30, 100, 10)
-rocket2 = Player('player1.png', 650, 420, 30, 100, 10)
+rocket1 = Player('player1.png', 0, 390, 30, 100, 10)
+rocket2 = Player('player1.png', 650, 390, 30, 100, 10)
 pong_ball = GameSprite('pong_ball1.png', 300, 300, 50, 50, 9)
 
 while game:
@@ -49,3 +49,4 @@ while game:
     pong_ball.reset()
     display.update()
     clock.tick(60)
+    #hey
